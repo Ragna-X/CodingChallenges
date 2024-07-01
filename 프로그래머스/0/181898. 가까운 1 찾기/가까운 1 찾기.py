@@ -1,5 +1,5 @@
 def solution(arr, idx):
-    for arr_idx, i in enumerate(arr[idx:]):
-        if i == 1:
-            return arr_idx + idx
+    for offset, value in enumerate(arr[idx:]):
+        if value == 1:
+            return offset + idx
     return -1
